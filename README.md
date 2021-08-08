@@ -1,1 +1,1 @@
-# Vanilla JS ToDo App using bootstrap
+Vanilla JS ToDo App using bootstrap
