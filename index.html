@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <script src="myScript.js"></script>
+    <link rel="stylesheet" href="myStyle.css" />
+
+    <script></script>
+  </head>
+  <body>
+    <div class="container">
+      <h6 id="CheckedItems">Checked Items: 0</h6>
+      <h1>To Do List</h1>
+
+      <div class="input-group mb-3 wtf" id="father">
+        <input
+          type="text"
+          class="form-control"
+          id="input"
+          aria-label="Recipient's username"
+          aria-describedby="button-addon2"
+          onkeypress="enter(event)"
+        />
+        <button
+          onclick="add()"
+          class="btn btn-outline-secondary"
+          type="button"
+          id="button-addon2"
+        >
+          Submit
+        </button>
+        <button
+          onclick="checkAll(this)"
+          class="btn btn-outline-secondary"
+          type="button"
+          id="button-addon2"
+        >
+          checkAll
+        </button>
+        <button
+          onclick="yowtf()"
+          class="btn btn-outline-secondary yowtf"
+          type="button"
+          id="button-addon2"
+        >
+          delete Checked
+        </button>
+      </div>
+
+      <ul class="list-group" id="child"></ul>
+
+      <nav aria-label="Page navigation example" class="NavContent">
+        <ul class="pagination d-flex justify-content-center">
+          <li class="page-item page-link" onclick="moveLeft()">Previous</li>
+          <div id="pageBtns">
+            <li
+              class="page-item page-link currentPage"
+              id="1"
+              onclick="page1Func()"
+            >
+              1
+            </li>
+          </div>
+          <li class="page-item page-link" onclick="moveRight()">Next</li>
+        </ul>
+      </nav>
+    </div>
+  </body>
+</html>

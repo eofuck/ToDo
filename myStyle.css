@@ -1,0 +1,59 @@
+.wtf {
+  margin-top: 30px;
+}
+.content {
+  display: flex;
+  flex-direction: row;
+}
+.hideme {
+  display: none;
+}
+
+.showme {
+  display: flex;
+}
+#pageBtns {
+  display: flex;
+  flex-direction: row;
+}
+
+#target {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+h1 {
+  text-align: center;
+
+}
+
+.currentPage {
+  border: 1.5px solid rgb(46, 130, 255);
+}
+
+.NavContent {
+  margin-top: 20px;
+}
+
+.form-check-input {
+  margin-right: 3px;
+}
+
+.form-check-input {
+  display: flex;
+  align-self: center;
+}
+
+.yowtf {
+  display: flex;
+  text-align: center;
+}
+
+#CheckedItems {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 40px;
+}
